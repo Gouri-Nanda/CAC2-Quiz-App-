@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#7187f0 ;
+}
+
+#quiz-container {
+    height:25em;
+    width:30em;
+    max-width: 600px;
+    text-align: center;
+    background-color: #e3edf8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#result-page {
+    display: none;
+}
+
+
+#progress-bar-container {
+    margin-top: 20px;
+    height: 20px;
+    background-color:#e3edf8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+#score-display{
+    font-size: 10em;
+}
+
+#result-page{
+    
+    background: #e3edf8;
+    height:25em;
+    width: 30em;
+    max-width: 600px;
+    text-align: center;
+    color: #4353a3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+  
+.btn-container {
+    margin-top: 20px;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 3%;
+}
+
+.btn{
+    width:15em;
+}
+
+#next-button{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    background: #4caf50;
+    width: 10em;
+}
+#next-button:hover {
+    background-color: #98dd91;
+    color: darkgreen;
+}
+
+#restart-button{
+    background: rgba(31, 13, 230, 0.769)
+}
+
+#restart-button:hover{
+    background: #7187f0;
+    color: navy;
+}
+
+@media (max-width: 600px) {
+    #quiz-container, #result-page {
+        width: 100%;
+    }
+}
